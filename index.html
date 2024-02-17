@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Difference between window and document objects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    pre {
+      background-color: rgb(235, 224, 224);
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Difference between window and document objects</h1>
+  <p>
+    In this example, we'll demonstrate the difference between the `window` and `document` objects in HTML and JavaScript.
+  </p>
+  <h2>The `window` object</h2>
+  <p>
+    The `window` object represents the browser window itself, and contains various properties and methods related to the window, such as the `screen` object, which describes the user's screen size, and the `navigator` object, which contains information about the user's browser.
+  </p>
+  <pre>
+    console.log('Window width:', window.innerWidth);
+    console.log('Screen width:', screen.width);
+    console.log('Browser name:', navigator.appName);
+  </pre>
+  <h2>The `document` object</h2>
+  <p>
+    The `document` object represents the HTML document that is currently loaded in the window. It contains various properties and methods related to the HTML document, such as the `head` and `body` elements, as well as all the other HTML elements on the page.
+  </p>
+  <pre>
+    console.log('Document title:', document.title);
+    console.log('Heading text:', document.querySelector('h1').textContent);
+    console.log('Number of links:', document.links.length);
+  </pre>
+</body>
+</html>
